@@ -555,7 +555,9 @@ Possible directions for further development include:
 
 ## License
 
-No explicit license file is currently included in this repository snapshot. Add a license before public reuse or distribution if needed.
+MIT License
+
+Copyright (c) 2026 Devanik
 
 ---
 
