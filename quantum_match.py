@@ -23,7 +23,7 @@ st.set_page_config(
     page_icon="⚛️"
 )
 
-st.title("⚛️ Quantum Match Arena")
+st.title(" ⚛ Quantum Match Arena")
 st.markdown("""
 A hidden-information deduction game on a **2×2 grid** with double-sided flip tokens.
 Master the quantum of uncertainty — every flip changes the battlefield.
