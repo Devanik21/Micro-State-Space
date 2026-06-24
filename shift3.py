@@ -21,7 +21,7 @@ st.set_page_config(
     page_title="Shift-3 Arena",
     layout="wide",
     initial_sidebar_state="expanded",
-    page_icon="⟷"
+    page_icon="⛩️"
 )
 
 st.title("⟷ Shift-3 Arena")
