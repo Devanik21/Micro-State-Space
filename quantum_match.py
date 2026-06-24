@@ -20,7 +20,7 @@ st.set_page_config(
     page_title="Quantum Match Arena",
     layout="wide",
     initial_sidebar_state="expanded",
-    page_icon="⚛️"
+    page_icon="🐈‍⬛"
 )
 
 st.title(" ⚛ Quantum Match Arena")
@@ -779,7 +779,7 @@ def draw_training_charts(history: Dict) -> plt.Figure:
     axes[1, 1].set_title('Win Rate Over Time', color='#CCCCFF')
     axes[1, 1].legend(facecolor='#1a1a2e', edgecolor='#334455', labelcolor='white')
 
-    fig.suptitle('⚛️ Quantum Match Training Analytics', fontsize=15,
+    fig.suptitle('🐈‍⬛ Quantum Match Training Analytics', fontsize=15,
                  color='#CCCCFF', fontweight='bold')
     plt.tight_layout()
     return fig
@@ -907,7 +907,7 @@ with st.sidebar.expander("4. Brain Storage", expanded=False):
             st.toast("✅ Agents loaded!", icon="🧠")
             st.rerun()
 
-train_btn = st.sidebar.button("⚛️ Begin Self-Play Training",
+train_btn = st.sidebar.button("🐈‍⬛ Begin Self-Play Training",
                                use_container_width=True, type="primary")
 if st.sidebar.button("🧹 Reset Arena", use_container_width=True):
     for k in list(st.session_state.keys()):
@@ -962,7 +962,7 @@ st.markdown("---")
 # ============================================================================
 
 if train_btn:
-    st.subheader("⚛️ Quantum Match Self-Play Training")
+    st.subheader("🐈‍⬛ Quantum Match Self-Play Training")
     status_ph = st.empty()
     prog_bar = st.progress(0.0)
     board_ph = st.empty() if show_live else None
@@ -1015,7 +1015,7 @@ if train_btn:
                 plt.close(fig)
 
     prog_bar.progress(1.0)
-    st.toast("Training Complete! ⚛️", icon="✨")
+    st.toast("Training Complete! 🐈‍⬛", icon="✨")
     st.session_state.qm_training_history = hist
     time.sleep(0.5)
     st.rerun()
@@ -1095,7 +1095,7 @@ if len(agent1.policy_table) > 3 or len(agent1.q_table) > 3:
         else:
             st.warning("🤝 Draw or max moves reached.")
 else:
-    st.info("⚛️ Train agents first to enable championship match.")
+    st.info("🐈‍⬛ Train agents first to enable championship match.")
 
 # ============================================================================
 # Human vs AI
@@ -1168,7 +1168,7 @@ if st.session_state.get('qm_hv_active', False):
         plt.close(fig_hv)
 
     with col_side:
-        st.markdown("### ⚛️ Board Analysis")
+        st.markdown("### 🐈‍⬛ Board Analysis")
         ti = hv_g.get_threat_info()
         st.metric("Pool Remaining", f"{ti['pool']} tokens")
         st.metric("Empty Squares", ti['empty'])
@@ -1280,7 +1280,7 @@ with st.expander("🔬 Quick AI Simulation"):
 st.markdown("---")
 with st.expander("📖 Quantum Match Rules & Strategy Guide"):
     st.markdown("""
-## ⚛️ Quantum Match Rules
+## 🐈‍⬛ Quantum Match Rules
 
 ### The Board
 A **2×2 grid** (4 squares total): Top-Left, Top-Right, Bottom-Left, Bottom-Right.
