@@ -586,3 +586,11 @@ Its core value lies in the combination of:
 - and portable agent checkpoints.
 
 Even though the environments are minimal, the design space is not. Each arena is compact enough to inspect, yet rich enough to study meaningful tactical and algorithmic behavior.
+
+##  Key Focus
+
+- Minimal state spaces with rich strategy
+- Search-driven decision making (MCTS + Alpha-Beta)
+- Lightweight reinforcement learning (tabular)
+- Self-play and policy refinement
+- Interactive AI visualization
