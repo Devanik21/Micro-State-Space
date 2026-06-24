@@ -1,4 +1,4 @@
-# 🐈‍⬛ Micro-State-Space
+#  Micro-State-Space
 
 A compact research and experimentation repository for **micro-scale adversarial game environments** built with **Streamlit**, **Matplotlib**, and lightweight **search + learning agents**.
 
